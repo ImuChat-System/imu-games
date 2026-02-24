@@ -1,10 +1,10 @@
+import { BrainCircuit, Puzzle, Swords, Users } from 'lucide-react';
 import { useState } from 'react';
-import { useTranslations } from '../providers/I18nProvider';
-import { GameCard } from '../components/hub/GameCard';
-import { FeaturedCarousel } from '../components/hub/FeaturedCarousel';
-import { CategoryFilterBar } from '../components/hub/CategoryFilterBar';
 import { CallToAction } from '../components/hub/CallToAction';
-import { BrainCircuit, Swords, Puzzle, Users } from 'lucide-react';
+import { CategoryFilterBar } from '../components/hub/CategoryFilterBar';
+import { FeaturedCarousel } from '../components/hub/FeaturedCarousel';
+import { GameCard } from '../components/hub/GameCard';
+import { useTranslations } from '../providers/I18nProvider';
 
 interface GamesHubProps {
   onNavigate: (path: string) => void;

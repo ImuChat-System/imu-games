@@ -1,59 +1,59 @@
 {
-  "GamesHub": {
-    "description": "コミュニティでゲームを見つけてプレイしましょう。",
-    "ctaTitle": "次のレベルへ進む準備はできていますか？",
-    "ctaDescription": "ギルドでプレイすると、新しいチャレンジや報酬がアンロックされます。あなた自身の冒険を作りましょう！",
-    "ctaCreate": "独自のチャレンジを作成",
-    "ctaInvite": "友達を招待",
-    "categories": {
-      "title": "カテゴリー",
-      "all": "すべてのゲーム",
-      "quiz": "クイズ＆雑学",
-      "strategy": "戦略",
-      "puzzle": "パズル",
-      "community": "コミュニティ"
+    "GamesHub": {
+        "description": "コミュニティでゲームを見つけてプレイしましょう。",
+        "ctaTitle": "次のレベルへ進む準備はできていますか？",
+        "ctaDescription": "ギルドでプレイすると、新しいチャレンジや報酬がアンロックされます。あなた自身の冒険を作りましょう！",
+        "ctaCreate": "独自のチャレンジを作成",
+        "ctaInvite": "友達を招待",
+        "categories": {
+            "title": "カテゴリー",
+            "all": "すべてのゲーム",
+            "quiz": "クイズ＆雑学",
+            "strategy": "戦略",
+            "puzzle": "パズル",
+            "community": "コミュニティ"
+        },
+        "gameDetails": {
+            "animeQuiz": {
+                "name": "アニメクイズ",
+                "description": "アニメの広大な世界に関する知識を試しましょう。",
+                "cta": "クイズをプレイ",
+                "tags": "雑学, ソロ"
+            },
+            "characterDuel": {
+                "name": "キャラクターデュエル（近日公開）",
+                "description": "お気に入りのキャラクターとターン制のデュエルで戦いましょう。",
+                "cta": "近日公開",
+                "tags": "マルチプレイヤー, バトル"
+            },
+            "genshinPuzzle": {
+                "name": "原神パズル",
+                "description": "テイワットにインスパイアされた複雑なパズルを解きましょう。",
+                "cta": "近日公開",
+                "tags": "ソロ, リラックス"
+            },
+            "communityDraw": {
+                "name": "コミュニティドロー",
+                "description": "毎週のテーマがある共同お絵かきゲーム。",
+                "cta": "近日公開",
+                "tags": "クリエイティブ, マルチプレイヤー"
+            }
+        }
     },
-    "gameDetails": {
-      "animeQuiz": {
-        "name": "アニメクイズ",
-        "description": "アニメの広大な世界に関する知識を試しましょう。",
-        "cta": "クイズをプレイ",
-        "tags": "雑学, ソロ"
-      },
-      "characterDuel": {
-        "name": "キャラクターデュエル（近日公開）",
-        "description": "お気に入りのキャラクターとターン制のデュエルで戦いましょう。",
-        "cta": "近日公開",
-        "tags": "マルチプレイヤー, バトル"
-      },
-      "genshinPuzzle": {
-        "name": "原神パズル",
-        "description": "テイワットにインスパイアされた複雑なパズルを解きましょう。",
-        "cta": "近日公開",
-        "tags": "ソロ, リラックス"
-      },
-      "communityDraw": {
-        "name": "コミュニティドロー",
-        "description": "毎週のテーマがある共同お絵かきゲーム。",
-        "cta": "近日公開",
-        "tags": "クリエイティブ, マルチプレイヤー"
-      }
+    "QuizGame": {
+        "title": "アニメ雑学クイズ",
+        "readyTitle": "知識を試す準備はできましたか？",
+        "startButton": "クイズを開始",
+        "finishedTitle": "クイズ終了！",
+        "finishedDescription": "最終スコアをチェック！",
+        "playAgainButton": "もう一度プレイ",
+        "questionDescription": "以下の選択肢から正解を選んでください。",
+        "scoreboardTitle": "スコアボード",
+        "scoreboardDescription": "このクイズマッチのライブランキング。",
+        "you": "(あなた)"
+    },
+    "GameSlug": {
+        "comingSoon": "このゲームは近日公開予定です！",
+        "back": "ゲームに戻る"
     }
-  },
-  "QuizGame": {
-    "title": "アニメ雑学クイズ",
-    "readyTitle": "知識を試す準備はできましたか？",
-    "startButton": "クイズを開始",
-    "finishedTitle": "クイズ終了！",
-    "finishedDescription": "最終スコアをチェック！",
-    "playAgainButton": "もう一度プレイ",
-    "questionDescription": "以下の選択肢から正解を選んでください。",
-    "scoreboardTitle": "スコアボード",
-    "scoreboardDescription": "このクイズマッチのライブランキング。",
-    "you": "(あなた)"
-  },
-  "GameSlug": {
-    "comingSoon": "このゲームは近日公開予定です！",
-    "back": "ゲームに戻る"
-  }
 }

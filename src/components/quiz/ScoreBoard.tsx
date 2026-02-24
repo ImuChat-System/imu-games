@@ -1,8 +1,8 @@
-import { useTranslations } from '../../providers/I18nProvider';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../ui/Card';
-import { Avatar } from '../ui/Avatar';
-import { Trophy, Award, Shield, Sparkles } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Award, Shield, Sparkles, Trophy } from 'lucide-react';
+import { useTranslations } from '../../providers/I18nProvider';
+import { Avatar } from '../ui/Avatar';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/Card';
 
 interface ScoreBoardProps {
   players: { userId: string; name: string; score: number; avatar: string }[];

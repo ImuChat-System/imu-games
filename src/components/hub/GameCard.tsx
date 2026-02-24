@@ -1,8 +1,8 @@
-import { type ReactNode } from 'react';
 import { motion } from 'framer-motion';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/Card';
-import { Button } from '../ui/Button';
+import { type ReactNode } from 'react';
 import { Badge } from '../ui/Badge';
+import { Button } from '../ui/Button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/Card';
 
 interface GameCardProps {
   game: {

@@ -1,8 +1,8 @@
-import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
-import { useImuChat } from './ImuChatProvider';
+import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import en from '../i18n/en.json';
 import fr from '../i18n/fr.json';
 import ja from '../i18n/ja.json';
+import { useImuChat } from './ImuChatProvider';
 
 type Locale = 'en' | 'fr' | 'ja';
 type Messages = typeof en;
@@ -21,6 +21,8 @@ const I18nContext = createContext<I18nContextValue>({
   setLocale: () => {},
 });
 
+export function useTranslations(namespace: string): (key: string) => string;
+export function useTranslations(): { t: (namespace: string, key: string) => string; locale: Locale };
 export function useTranslations(namespace?: string) {
   const { t, locale } = useContext(I18nContext);
   if (namespace) {

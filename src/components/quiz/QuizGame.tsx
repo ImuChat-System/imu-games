@@ -1,12 +1,12 @@
-import { useState, useCallback } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useCallback, useState } from 'react';
 import { useTranslations } from '../../providers/I18nProvider';
 import { useImuChat } from '../../providers/ImuChatProvider';
-import { Card, CardHeader, CardTitle, CardContent } from '../ui/Card';
 import { Button } from '../ui/Button';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/Card';
 import { QuizQuestion } from './QuizQuestion';
 import { QuizTimer } from './QuizTimer';
 import { ScoreBoard } from './ScoreBoard';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const MOCK_QUESTIONS = [
   {

@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
-import { useTranslations } from '../../providers/I18nProvider';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../ui/Card';
-import { Button } from '../ui/Button';
-import { cn } from '../../lib/utils';
 import { CheckCircle2, XCircle } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { cn } from '../../lib/utils';
+import { useTranslations } from '../../providers/I18nProvider';
+import { Button } from '../ui/Button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/Card';
 
 interface QuizQuestionProps {
   question: {

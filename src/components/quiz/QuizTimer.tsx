@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
 import { Timer } from 'lucide-react';
-import { Progress } from '../ui/Progress';
+import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../lib/utils';
+import { Progress } from '../ui/Progress';
 
 interface QuizTimerProps {
   duration: number; // in seconds

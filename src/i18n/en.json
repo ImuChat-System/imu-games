@@ -1,59 +1,59 @@
 {
-  "GamesHub": {
-    "description": "Discover and play games with the community.",
-    "ctaTitle": "Ready for the next level?",
-    "ctaDescription": "Playing with a group unlocks new challenges and rewards. Create your own adventure!",
-    "ctaCreate": "Create your own challenge",
-    "ctaInvite": "Invite your friends",
-    "categories": {
-      "title": "Categories",
-      "all": "All Games",
-      "quiz": "Quiz & Trivia",
-      "strategy": "Strategy",
-      "puzzle": "Puzzle",
-      "community": "Community"
+    "GamesHub": {
+        "description": "Discover and play games with the community.",
+        "ctaTitle": "Ready for the next level?",
+        "ctaDescription": "Playing with a group unlocks new challenges and rewards. Create your own adventure!",
+        "ctaCreate": "Create your own challenge",
+        "ctaInvite": "Invite your friends",
+        "categories": {
+            "title": "Categories",
+            "all": "All Games",
+            "quiz": "Quiz & Trivia",
+            "strategy": "Strategy",
+            "puzzle": "Puzzle",
+            "community": "Community"
+        },
+        "gameDetails": {
+            "animeQuiz": {
+                "name": "Anime Quiz",
+                "description": "Test your knowledge on the vast world of anime.",
+                "cta": "Play Quiz",
+                "tags": "Trivia, Solo"
+            },
+            "characterDuel": {
+                "name": "Character Duel (soon)",
+                "description": "Battle with your favorite characters in a turn-based duel.",
+                "cta": "Coming Soon",
+                "tags": "Multiplayer, Battle"
+            },
+            "genshinPuzzle": {
+                "name": "Genshin Puzzle",
+                "description": "Solve intricate puzzles inspired by Teyvat.",
+                "cta": "Coming Soon",
+                "tags": "Solo, Relaxing"
+            },
+            "communityDraw": {
+                "name": "Community Draw",
+                "description": "A collaborative drawing game with weekly themes.",
+                "cta": "Coming Soon",
+                "tags": "Creative, Multiplayer"
+            }
+        }
     },
-    "gameDetails": {
-      "animeQuiz": {
-        "name": "Anime Quiz",
-        "description": "Test your knowledge on the vast world of anime.",
-        "cta": "Play Quiz",
-        "tags": "Trivia, Solo"
-      },
-      "characterDuel": {
-        "name": "Character Duel (soon)",
-        "description": "Battle with your favorite characters in a turn-based duel.",
-        "cta": "Coming Soon",
-        "tags": "Multiplayer, Battle"
-      },
-      "genshinPuzzle": {
-        "name": "Genshin Puzzle",
-        "description": "Solve intricate puzzles inspired by Teyvat.",
-        "cta": "Coming Soon",
-        "tags": "Solo, Relaxing"
-      },
-      "communityDraw": {
-        "name": "Community Draw",
-        "description": "A collaborative drawing game with weekly themes.",
-        "cta": "Coming Soon",
-        "tags": "Creative, Multiplayer"
-      }
+    "QuizGame": {
+        "title": "Anime Trivia Quiz",
+        "readyTitle": "Ready to test your knowledge?",
+        "startButton": "Start Quiz",
+        "finishedTitle": "Quiz Finished!",
+        "finishedDescription": "Check out the final scores!",
+        "playAgainButton": "Play Again",
+        "questionDescription": "Select the correct answer from the options below.",
+        "scoreboardTitle": "Scoreboard",
+        "scoreboardDescription": "Live rankings for this quiz match.",
+        "you": "(You)"
+    },
+    "GameSlug": {
+        "comingSoon": "This game will be available soon!",
+        "back": "Back to games"
     }
-  },
-  "QuizGame": {
-    "title": "Anime Trivia Quiz",
-    "readyTitle": "Ready to test your knowledge?",
-    "startButton": "Start Quiz",
-    "finishedTitle": "Quiz Finished!",
-    "finishedDescription": "Check out the final scores!",
-    "playAgainButton": "Play Again",
-    "questionDescription": "Select the correct answer from the options below.",
-    "scoreboardTitle": "Scoreboard",
-    "scoreboardDescription": "Live rankings for this quiz match.",
-    "you": "(You)"
-  },
-  "GameSlug": {
-    "comingSoon": "This game will be available soon!",
-    "back": "Back to games"
-  }
 }

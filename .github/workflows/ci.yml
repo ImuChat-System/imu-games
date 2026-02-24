@@ -1,73 +1,73 @@
 name: CI — ImuChat Games
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18, 20, 22]
+    build:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [18, 20, 22]
 
-    steps:
-      - uses: actions/checkout@v4
+        steps:
+            - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 9
+            - uses: pnpm/action-setup@v2
+              with:
+                  version: 9
 
-      - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: pnpm
+            - name: Setup Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v4
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: pnpm
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
 
-      - name: Type check
-        run: pnpm type-check
+            - name: Type check
+              run: pnpm type-check
 
-      - name: Lint
-        run: pnpm lint
+            - name: Lint
+              run: pnpm lint
 
-      - name: Build
-        run: pnpm build
+            - name: Build
+              run: pnpm build
 
-      - name: Validate manifest
-        run: |
-          node -e "
-            const manifest = require('./manifest.json');
-            const required = ['id', 'name', 'version', 'entry', 'permissions', 'category'];
-            const missing = required.filter(k => !manifest[k]);
-            if (missing.length) {
-              console.error('Missing manifest fields:', missing);
-              process.exit(1);
-            }
-            console.log('✅ Manifest valid:', manifest.id, 'v' + manifest.version);
-          "
+            - name: Validate manifest
+              run: |
+                  node -e "
+                    const manifest = require('./manifest.json');
+                    const required = ['id', 'name', 'version', 'entry', 'permissions', 'category'];
+                    const missing = required.filter(k => !manifest[k]);
+                    if (missing.length) {
+                      console.error('Missing manifest fields:', missing);
+                      process.exit(1);
+                    }
+                    console.log('✅ Manifest valid:', manifest.id, 'v' + manifest.version);
+                  "
 
-      - name: Check bundle size
-        run: |
-          if [ -d "dist" ]; then
-            SIZE=$(du -sb dist | cut -f1)
-            echo "Bundle size: $SIZE bytes"
-            MAX_SIZE=5242880  # 5MB
-            if [ "$SIZE" -gt "$MAX_SIZE" ]; then
-              echo "❌ Bundle exceeds 5MB limit"
-              exit 1
-            fi
-            echo "✅ Bundle size within limits"
-          fi
+            - name: Check bundle size
+              run: |
+                  if [ -d "dist" ]; then
+                    SIZE=$(du -sb dist | cut -f1)
+                    echo "Bundle size: $SIZE bytes"
+                    MAX_SIZE=5242880  # 5MB
+                    if [ "$SIZE" -gt "$MAX_SIZE" ]; then
+                      echo "❌ Bundle exceeds 5MB limit"
+                      exit 1
+                    fi
+                    echo "✅ Bundle size within limits"
+                  fi
 
-      - name: Upload build artifact
-        if: matrix.node-version == 20
-        uses: actions/upload-artifact@v4
-        with:
-          name: imu-games-dist
-          path: dist/
-          retention-days: 7
+            - name: Upload build artifact
+              if: matrix.node-version == 20
+              uses: actions/upload-artifact@v4
+              with:
+                  name: imu-games-dist
+                  path: dist/
+                  retention-days: 7

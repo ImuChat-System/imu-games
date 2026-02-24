@@ -1,5 +1,5 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import type { ImuChat } from '@imuchat/miniapp-sdk';
+import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 
 interface ImuChatContextValue {
   app: ImuChat | null;

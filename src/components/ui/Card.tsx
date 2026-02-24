@@ -1,4 +1,4 @@
-import { type ReactNode, type HTMLAttributes } from 'react';
+import { type HTMLAttributes, type ReactNode } from 'react';
 import { cn } from '../lib/utils';
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
