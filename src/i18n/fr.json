@@ -1,0 +1,59 @@
+{
+  "GamesHub": {
+    "description": "Découvrez et jouez à des jeux avec la communauté.",
+    "ctaTitle": "Prêt pour le prochain niveau ?",
+    "ctaDescription": "Jouer avec une guilde débloque de nouveaux défis et récompenses. Créez votre propre aventure !",
+    "ctaCreate": "Créer ton propre défi",
+    "ctaInvite": "Inviter tes amis",
+    "categories": {
+      "title": "Catégories",
+      "all": "Tous les jeux",
+      "quiz": "Quiz & Trivia",
+      "strategy": "Stratégie",
+      "puzzle": "Puzzle",
+      "community": "Communauté"
+    },
+    "gameDetails": {
+      "animeQuiz": {
+        "name": "Quiz Anime",
+        "description": "Testez vos connaissances sur le vaste monde de l'anime.",
+        "cta": "Jouer au Quiz",
+        "tags": "Trivia, Solo"
+      },
+      "characterDuel": {
+        "name": "Duel de Personnages (bientôt)",
+        "description": "Affrontez vos personnages préférés dans un duel au tour par tour.",
+        "cta": "Bientôt disponible",
+        "tags": "Multijoueur, Combat"
+      },
+      "genshinPuzzle": {
+        "name": "Puzzle Genshin",
+        "description": "Résolvez des énigmes complexes inspirées de Teyvat.",
+        "cta": "Bientôt disponible",
+        "tags": "Solo, Relaxant"
+      },
+      "communityDraw": {
+        "name": "Dessin Communautaire",
+        "description": "Un jeu de dessin collaboratif avec des thèmes hebdomadaires.",
+        "cta": "Bientôt disponible",
+        "tags": "Créatif, Multijoueur"
+      }
+    }
+  },
+  "QuizGame": {
+    "title": "Quiz de Culture Anime",
+    "readyTitle": "Prêt(e) à tester tes connaissances ?",
+    "startButton": "Démarrer le Quiz",
+    "finishedTitle": "Quiz Terminé !",
+    "finishedDescription": "Consultez les scores finaux !",
+    "playAgainButton": "Rejouer",
+    "questionDescription": "Sélectionnez la bonne réponse parmi les options ci-dessous.",
+    "scoreboardTitle": "Tableau des scores",
+    "scoreboardDescription": "Classement en direct pour ce match de quiz.",
+    "you": "(Vous)"
+  },
+  "GameSlug": {
+    "comingSoon": "Ce jeu sera bientôt disponible !",
+    "back": "Retour aux jeux"
+  }
+}

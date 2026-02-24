@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --imu-primary: #6366f1;
+  --imu-primary-foreground: #ffffff;
+  --imu-background: #ffffff;
+  --imu-foreground: #0f172a;
+  --imu-card: #f8fafc;
+  --imu-card-foreground: #0f172a;
+  --imu-muted: #f1f5f9;
+  --imu-muted-foreground: #64748b;
+  --imu-destructive: #ef4444;
+  --imu-destructive-foreground: #ffffff;
+  --imu-border: #e2e8f0;
+  --imu-ring: #6366f1;
+  --imu-radius: 0.5rem;
+}
+
+.dark {
+  --imu-primary: #818cf8;
+  --imu-primary-foreground: #ffffff;
+  --imu-background: #0f172a;
+  --imu-foreground: #f8fafc;
+  --imu-card: #1e293b;
+  --imu-card-foreground: #f8fafc;
+  --imu-muted: #334155;
+  --imu-muted-foreground: #94a3b8;
+  --imu-destructive: #f87171;
+  --imu-destructive-foreground: #ffffff;
+  --imu-border: #334155;
+  --imu-ring: #818cf8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--imu-background);
+  color: var(--imu-foreground);
+}
+
+#root {
+  min-height: 100vh;
+}
