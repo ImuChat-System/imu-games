@@ -10,6 +10,8 @@ export default defineConfig({
         },
     },
     root: '.',
+    // Base path : en production les assets seront servis depuis /miniapps/imu-games/
+    base: process.env.NODE_ENV === 'production' ? '/miniapps/imu-games/' : '/',
     build: {
         outDir: 'dist',
         target: 'es2022',

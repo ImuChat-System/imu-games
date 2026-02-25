@@ -9,6 +9,8 @@
     "scripts": {
         "dev": "vite",
         "build": "tsc -b && vite build",
+        "build:miniapp": "NODE_ENV=production tsc -b && vite build",
+        "deploy:local": "pnpm build:miniapp && mkdir -p ../web-app/public/miniapps/imu-games && cp -r dist/* ../web-app/public/miniapps/imu-games/",
         "preview": "vite preview",
         "lint": "eslint . --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0",
         "format": "prettier --write \"src/**/*.{ts,tsx,css,json}\"",
