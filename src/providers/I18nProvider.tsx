@@ -21,12 +21,14 @@ const I18nContext = createContext<I18nContextValue>({
   setLocale: () => {},
 });
 
-export function useTranslations(namespace: string): (key: string) => string;
-export function useTranslations(): { t: (namespace: string, key: string) => string; locale: Locale };
+type TranslateFunction = (key: string, params?: Record<string, string | number>) => string;
+
+export function useTranslations(namespace: string): TranslateFunction;
+export function useTranslations(): { t: (namespace: string, key: string, params?: Record<string, string | number>) => string; locale: Locale };
 export function useTranslations(namespace?: string) {
   const { t, locale } = useContext(I18nContext);
   if (namespace) {
-    return (key: string) => t(namespace, key);
+    return ((key: string, params?: Record<string, string | number>) => t(namespace, key, params)) as TranslateFunction;
   }
   return { t, locale };
 }
